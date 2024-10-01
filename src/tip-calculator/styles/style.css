@@ -1,0 +1,204 @@
+.container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:   hsl(185, 41%, 84%);
+        height: 100vh;
+}
+
+.splitter-header {
+        color: black;
+        opacity: 0.65;
+        letter-spacing: 3px;
+        
+}
+
+.splitter-app {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: white;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        width: 80%;
+}
+
+.input-panel {
+       display: flex;
+       flex-direction: column;
+       gap: 1.5rem;
+       justify-content: space-around;
+       padding: 2rem;
+
+}
+
+.input-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+}
+
+label {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: Black;
+        opacity: 0.7;
+}
+
+input[type="number"] {
+        width: 100%;
+        padding: 0.8rem;
+        border-radius: 10px;
+        border: none;
+        background-color: #f3f9fa;
+        font-size: 1.2rem;
+        text-align: right;
+        color: #333;
+        box-shadow: 0 0 0 2px rgba(0,0,0,0.05);
+        cursor: pointer;
+}
+
+.error-border {
+        border: 4px solid red;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* Chrome, Safari, Edge */
+}
+
+.error-message {
+        color: red;
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
+}
+
+.tip-buttons {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+}
+
+.tip-button, .custom-input{
+        padding: 0.5rem;
+        border-radius: 4px;
+        border: none;
+        background-color: #00474B;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        width: 100%;
+        height: 3.5rem;
+        box-sizing: border-box;
+        font-size: 1rem;
+}
+
+.custom-input {
+        background-color: #f3f9fa;
+        color: #333;
+        font-weight: 500;
+         ;
+}
+
+.custom-input::placeholder {
+        color: #9e9e9e;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;;
+}
+
+.error-message {
+        color: red;
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
+}
+
+
+.error-border {
+        border: 2px solid red;
+}
+
+
+.output-panel {
+        background-color: hsl(183, 100%, 15%);
+        border-radius: 20px;
+        padding: 2rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 89x 20px rbga(0,0,0,0.1);
+}
+
+
+.output-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.output-text h3 {
+        font-size: 1rem;
+        margin: 0;
+        font-weight: normal;
+        color: white;
+}
+
+.output-text h4 {
+        font-size: 1rem;
+        margin: 0;
+        font-weight: normal;
+        color: #7f9c9f;
+}
+
+.output-value p {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #26c0ab;
+}
+
+.output-lower {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+}
+
+.output-lower button {
+        width: 100%;
+        padding: 1rem;
+        background-color: #26c0ab;
+        color: #00474B;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+}
+
+.output-lower button:hover {
+        background-color: #9fe8df;
+}
+
+.output-lower button:active {
+        background-color: #62d5c0;
+}
+
+.output-lower button:disabled {
+        background-color: #86D9C9;
+        cursor: not-allowed;
+}
+
+    
+
+@media (max-width:800px) {
+        .splitter-app {
+                display: flex;
+                flex-direction: column;
+        }
+}
+
+
+
