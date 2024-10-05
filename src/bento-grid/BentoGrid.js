@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import './styles/style.css';
+import './styles/finalStyle.css';
 import stars from "./assets/images/illustration-five-stars.webp";
 import usernames from "./assets/images/illustration-multiple-platforms.webp";
 import calender from "./assets/images/illustration-consistent-schedule.webp";
@@ -50,7 +50,7 @@ function BentoGrid() {
         <img className="grid6-image1" src={audience} alt="audience" />
       </div>
 
-      <div className="left-column">
+      <div className="grid7-8">
         <div className="grid7">
           <p className="grid7-text1">Create and schdule content <span className="grid7-text2">quicker.</span></p>
           <img className="grid7-image1" src={create} alt="create" />

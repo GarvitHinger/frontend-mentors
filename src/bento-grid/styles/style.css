@@ -11,7 +11,7 @@
       }
 
 
-.container {
+ .container {
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(3,1fr);
@@ -19,10 +19,8 @@
         height: auto;
         padding: 2vw;
         background-color: lightgrey;
-        
+ }
 
-        /* heig; */
-}
 
 .grid1,
 .grid2,
@@ -260,5 +258,4 @@
 .grid8-image1 {
         /* color: black; */
 /* } */ 
-
 

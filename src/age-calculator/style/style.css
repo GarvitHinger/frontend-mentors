@@ -1,0 +1,124 @@
+/* Global CSS: index.css or global stylesheet */
+html, body, #root {
+    height: 100%;          /* Full viewport height */
+    margin: 0;             /* Remove default margin */
+    padding: 0;            /* Remove default padding */
+    overflow: hidden;      /* Prevent scrollbars */
+    display: flex;        
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f0f1; 
+}
+
+
+.container {
+    background-color: white;
+    padding: 1rem 4rem;
+    border-radius: 20px;
+    border-bottom-right-radius: 30%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label-text {
+    letter-spacing: 3px;
+}
+
+.input-group input {
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+    width: 40%;
+    height: 40px;
+    font-weight: 700;
+    text-align:center;
+    font-size: 1rem;
+    
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* Chrome, Safari, Edge */
+}
+
+.input-field {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc; /* Default border */
+}
+
+.input-error {
+    border: 1px solid red; /* Red border for error */
+}
+
+.input-label-text {
+    font-size: 14px;
+    color: #000; /* Default label color */
+}
+
+.label-error {
+    color: red; /* Red label when there's an error */
+}
+
+.error-text {
+    color: red; /* Red text for error message */
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.middle-section {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+hr {
+    width: 100%;
+    opacity: 0.9;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.middle-section button {
+    border-radius: 50%;
+    padding: 1rem;
+    border-width: 0;
+    background-color: #864cff;
+    
+}
+
+.output-section {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.output-section h3 {
+    margin: 0rem;
+    padding:0rem;
+}
+.output-section .purple-color {
+    color:#864cff;
+    padding: 0;
+    margin:0;
+}
