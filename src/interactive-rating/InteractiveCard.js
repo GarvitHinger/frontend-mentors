@@ -1,9 +1,20 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./style/style.css";
 import logo from "./images/card-logo.svg";
 import frontcard from "./images/bg-card-front.png";
 import backcard from "./images/bg-card-back.png";
 const InteractiveCard = () => {
+
+
+    const [name, setName] = useState("JANE APPLESEED");
+    const [number, setNumber] = useState("0000 0000 0000 0000");
+    const [mm, setMM] = useState("00");
+    const [yy, setYY] = useState("00");
+    const [cvv, setCVV] = useState("000");
+
+    
+
+
     return (
         <div className='container'>
             <div className="cards">
@@ -15,10 +26,10 @@ const InteractiveCard = () => {
                         <img src={logo} alt="logo" />
                         <div className="front-card-detail">
 
-                            <p className="card-number">0000 0000 0000 0000</p>
+                            <p className="card-number">{number}</p>
                             <div className='front-card-bottom'>
-                                <p className="card-name">JANE APPLESEED</p>
-                                <p className="card-expiry">00/00</p>
+                                <p className="card-name">{name}</p>
+                                <p className="card-expiry">{mm}/{yy}</p>
                             </div>
                         </div>
                     </div>
@@ -26,7 +37,7 @@ const InteractiveCard = () => {
                 <div className="back-card">
                     <img className="back-card-background" src={backcard} alt="back" />
                     <div className="back-card-inside">
-                        <p className="cvv-number">000</p>
+                        <p className="cvv-number">{cvv}</p>
                     </div>
                 </div>
             </div>

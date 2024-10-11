@@ -5,12 +5,13 @@
 
 // import AgeCalculator from "./age-calculator/AgeCalculator";
 import "./app.css"
-import InteractiveCard from "./interactive-rating/InteractiveCard";
+// import InteractiveCard from "./interactive-rating/InteractiveCard";
+import AdviceGenerate from "./advice-generate/AdviceGenerate"
 
 function App() {
   return (
     <div >
-      <InteractiveCard />
+      <AdviceGenerate />
     </div>
   );
 }
