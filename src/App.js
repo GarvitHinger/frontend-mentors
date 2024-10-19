@@ -6,12 +6,13 @@
 // import AgeCalculator from "./age-calculator/AgeCalculator";
 import "./app.css"
 // import InteractiveCard from "./interactive-rating/InteractiveCard";
-import AdviceGenerate from "./advice-generate/AdviceGenerate"
+// import AdviceGenerate from "./advice-generate/AdviceGenerate"
 
+import GithubUserFinder from "./github-user-search/GithubUserFinder";
 function App() {
   return (
     <div >
-      <AdviceGenerate />
+      <GithubUserFinder />
     </div>
   );
 }
