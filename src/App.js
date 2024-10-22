@@ -7,12 +7,15 @@
 import "./app.css"
 // import InteractiveCard from "./interactive-rating/InteractiveCard";
 // import AdviceGenerate from "./advice-generate/AdviceGenerate"
+import HuddleLanding from "./huddle-landing-page/HuddleLanding";
 
-import GithubUserFinder from "./github-user-search/GithubUserFinder";
+// import GithubUserFinder from "./github-user-search/GithubUserFinder";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 function App() {
   return (
     <div >
-      <GithubUserFinder />
+      <HuddleLanding />
     </div>
   );
 }
